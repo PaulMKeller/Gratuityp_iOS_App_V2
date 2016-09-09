@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DA29BAF51D812B430054E0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BAF41D812B430054E0BB /* AppDelegate.swift */; };
-		DA29BAF71D812B430054E0BB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BAF61D812B430054E0BB /* FirstViewController.swift */; };
-		DA29BAF91D812B430054E0BB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BAF81D812B430054E0BB /* SecondViewController.swift */; };
+		DA29BAF71D812B430054E0BB /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BAF61D812B430054E0BB /* ConnectViewController.swift */; };
+		DA29BAF91D812B430054E0BB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BAF81D812B430054E0BB /* NewsViewController.swift */; };
 		DA29BAFC1D812B430054E0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA29BAFA1D812B430054E0BB /* Main.storyboard */; };
 		DA29BAFE1D812B430054E0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA29BAFD1D812B430054E0BB /* Assets.xcassets */; };
 		DA29BB011D812B430054E0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA29BAFF1D812B430054E0BB /* LaunchScreen.storyboard */; };
@@ -17,6 +17,9 @@
 		DA29BB171D812B430054E0BB /* GratuitypUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BB161D812B430054E0BB /* GratuitypUITests.swift */; };
 		DA29BB431D812CC70054E0BB /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = DA29BB421D812CC70054E0BB /* Icons */; };
 		DA29BB471D812CF90054E0BB /* Images in Resources */ = {isa = PBXBuildFile; fileRef = DA29BB461D812CF90054E0BB /* Images */; };
+		DAF2CD2A1D8282C100C2C0FD /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2CD291D8282C100C2C0FD /* RewardViewController.swift */; };
+		DAF2CD2C1D82830A00C2C0FD /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2CD2B1D82830A00C2C0FD /* TipsViewController.swift */; };
+		DAF2CD2E1D82834D00C2C0FD /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2CD2D1D82834D00C2C0FD /* NetworkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,8 @@
 /* Begin PBXFileReference section */
 		DA29BAF11D812B430054E0BB /* Gratuityp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gratuityp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA29BAF41D812B430054E0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA29BAF61D812B430054E0BB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DA29BAF81D812B430054E0BB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DA29BAF61D812B430054E0BB /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		DA29BAF81D812B430054E0BB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		DA29BAFB1D812B430054E0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA29BAFD1D812B430054E0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA29BB001D812B430054E0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		DA29BB181D812B430054E0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA29BB421D812CC70054E0BB /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
 		DA29BB461D812CF90054E0BB /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		DAF2CD291D8282C100C2C0FD /* RewardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		DAF2CD2B1D82830A00C2C0FD /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		DAF2CD2D1D82834D00C2C0FD /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +112,12 @@
 				DA29BB461D812CF90054E0BB /* Images */,
 				DA29BB421D812CC70054E0BB /* Icons */,
 				DA29BAF41D812B430054E0BB /* AppDelegate.swift */,
-				DA29BAF61D812B430054E0BB /* FirstViewController.swift */,
-				DA29BAF81D812B430054E0BB /* SecondViewController.swift */,
+				DA29BAF61D812B430054E0BB /* ConnectViewController.swift */,
+				DAF2CD291D8282C100C2C0FD /* RewardViewController.swift */,
+				DA29BAF81D812B430054E0BB /* NewsViewController.swift */,
 				DA29BAFA1D812B430054E0BB /* Main.storyboard */,
+				DAF2CD2D1D82834D00C2C0FD /* NetworkViewController.swift */,
+				DAF2CD2B1D82830A00C2C0FD /* TipsViewController.swift */,
 				DA29BAFD1D812B430054E0BB /* Assets.xcassets */,
 				DA29BAFF1D812B430054E0BB /* LaunchScreen.storyboard */,
 				DA29BB021D812B430054E0BB /* Info.plist */,
@@ -267,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA29BAF91D812B430054E0BB /* SecondViewController.swift in Sources */,
+				DA29BAF91D812B430054E0BB /* NewsViewController.swift in Sources */,
+				DAF2CD2E1D82834D00C2C0FD /* NetworkViewController.swift in Sources */,
+				DAF2CD2C1D82830A00C2C0FD /* TipsViewController.swift in Sources */,
+				DAF2CD2A1D8282C100C2C0FD /* RewardViewController.swift in Sources */,
 				DA29BAF51D812B430054E0BB /* AppDelegate.swift in Sources */,
-				DA29BAF71D812B430054E0BB /* FirstViewController.swift in Sources */,
+				DA29BAF71D812B430054E0BB /* ConnectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				DA29BB1D1D812B430054E0BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA29BB1E1D812B430054E0BB /* Build configuration list for PBXNativeTarget "GratuitypTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				DA29BB201D812B430054E0BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA29BB211D812B430054E0BB /* Build configuration list for PBXNativeTarget "GratuitypUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				DA29BB231D812B430054E0BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
