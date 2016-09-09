@@ -139,7 +139,7 @@
                             <constraint firstItem="lYI-pt-20J" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="zZo-SY-jQ6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Connect" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Connect" image="connect.png" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="confirm" destination="Pru-ax-850" id="Liw-4K-Hci"/>
                         <outlet property="country" destination="utr-fa-lua" id="4Ju-NT-bGt"/>
@@ -181,7 +181,7 @@
                             <constraint firstItem="a9a-15-v6c" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="VXA-va-H8r"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="News" image="news.png" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,7 +216,7 @@
                             <constraint firstItem="W9t-Bd-rv5" firstAttribute="centerX" secondItem="a8c-ru-j5x" secondAttribute="centerX" id="pem-8O-EuD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rewards" image="second" id="ijT-br-R5S"/>
+                    <tabBarItem key="tabBarItem" title="Rewards" image="rewards.png" id="ijT-br-R5S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Drc-eB-UXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,7 +251,7 @@
                             <constraint firstItem="C2d-ig-eY2" firstAttribute="centerY" secondItem="D0e-FP-DWY" secondAttribute="centerY" id="sTP-YO-sKT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tips" image="first" id="voL-q2-rNo"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="tips.png" id="voL-q2-rNo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuT-T9-Nif" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,7 +286,7 @@
                             <constraint firstItem="ZMY-Y6-vBb" firstAttribute="centerX" secondItem="hZ6-gQ-d3I" secondAttribute="centerX" id="yu2-po-35O"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Your Network" image="first" id="d0T-K5-th1"/>
+                    <tabBarItem key="tabBarItem" title="Your Network" image="network.png" id="d0T-K5-th1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WmR-iJ-jkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,7 +317,10 @@
     </scenes>
     <resources>
         <image name="Tips.jpg" width="236" height="312"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="connect.png" width="29" height="30"/>
+        <image name="network.png" width="30" height="30"/>
+        <image name="news.png" width="30" height="30"/>
+        <image name="rewards.png" width="30" height="30"/>
+        <image name="tips.png" width="30" height="30"/>
     </resources>
 </document>

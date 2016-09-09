@@ -17,6 +17,12 @@
 		DA29BB171D812B430054E0BB /* GratuitypUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BB161D812B430054E0BB /* GratuitypUITests.swift */; };
 		DA29BB431D812CC70054E0BB /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = DA29BB421D812CC70054E0BB /* Icons */; };
 		DA29BB471D812CF90054E0BB /* Images in Resources */ = {isa = PBXBuildFile; fileRef = DA29BB461D812CF90054E0BB /* Images */; };
+		DAD1C41C1D82BBDB008D4055 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C41B1D82BBDB008D4055 /* connect.png */; };
+		DAD1C41E1D82BC54008D4055 /* network.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C41D1D82BC54008D4055 /* network.png */; };
+		DAD1C4221D82BCC4008D4055 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C4211D82BCC4008D4055 /* profile.png */; };
+		DAD1C4261D82BD76008D4055 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C4251D82BD76008D4055 /* news.png */; };
+		DAD1C4281D82BE12008D4055 /* rewards.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C4271D82BE12008D4055 /* rewards.png */; };
+		DAD1C42A1D82BE3E008D4055 /* tips.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C4291D82BE3E008D4055 /* tips.png */; };
 		DAF2CD2A1D8282C100C2C0FD /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2CD291D8282C100C2C0FD /* RewardViewController.swift */; };
 		DAF2CD2C1D82830A00C2C0FD /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2CD2B1D82830A00C2C0FD /* TipsViewController.swift */; };
 		DAF2CD2E1D82834D00C2C0FD /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2CD2D1D82834D00C2C0FD /* NetworkViewController.swift */; };
@@ -56,6 +62,12 @@
 		DA29BB181D812B430054E0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA29BB421D812CC70054E0BB /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
 		DA29BB461D812CF90054E0BB /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		DAD1C41B1D82BBDB008D4055 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
+		DAD1C41D1D82BC54008D4055 /* network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = network.png; sourceTree = "<group>"; };
+		DAD1C4211D82BCC4008D4055 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		DAD1C4251D82BD76008D4055 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		DAD1C4271D82BE12008D4055 /* rewards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewards.png; sourceTree = "<group>"; };
+		DAD1C4291D82BE3E008D4055 /* tips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tips.png; sourceTree = "<group>"; };
 		DAF2CD291D8282C100C2C0FD /* RewardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		DAF2CD2B1D82830A00C2C0FD /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		DAF2CD2D1D82834D00C2C0FD /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +121,7 @@
 		DA29BAF31D812B430054E0BB /* Gratuityp */ = {
 			isa = PBXGroup;
 			children = (
+				DAD1C41A1D82BBC6008D4055 /* TabIcons */,
 				DA29BB461D812CF90054E0BB /* Images */,
 				DA29BB421D812CC70054E0BB /* Icons */,
 				DA29BAF41D812B430054E0BB /* AppDelegate.swift */,
@@ -141,6 +154,19 @@
 				DA29BB181D812B430054E0BB /* Info.plist */,
 			);
 			path = GratuitypUITests;
+			sourceTree = "<group>";
+		};
+		DAD1C41A1D82BBC6008D4055 /* TabIcons */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1C4251D82BD76008D4055 /* news.png */,
+				DAD1C41B1D82BBDB008D4055 /* connect.png */,
+				DAD1C41D1D82BC54008D4055 /* network.png */,
+				DAD1C4211D82BCC4008D4055 /* profile.png */,
+				DAD1C4291D82BE3E008D4055 /* tips.png */,
+				DAD1C4271D82BE12008D4055 /* rewards.png */,
+			);
+			name = TabIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +275,15 @@
 			files = (
 				DA29BB471D812CF90054E0BB /* Images in Resources */,
 				DA29BB011D812B430054E0BB /* LaunchScreen.storyboard in Resources */,
+				DAD1C41E1D82BC54008D4055 /* network.png in Resources */,
 				DA29BB431D812CC70054E0BB /* Icons in Resources */,
+				DAD1C4221D82BCC4008D4055 /* profile.png in Resources */,
+				DAD1C4281D82BE12008D4055 /* rewards.png in Resources */,
 				DA29BAFE1D812B430054E0BB /* Assets.xcassets in Resources */,
+				DAD1C42A1D82BE3E008D4055 /* tips.png in Resources */,
 				DA29BAFC1D812B430054E0BB /* Main.storyboard in Resources */,
+				DAD1C4261D82BD76008D4055 /* news.png in Resources */,
+				DAD1C41C1D82BBDB008D4055 /* connect.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
