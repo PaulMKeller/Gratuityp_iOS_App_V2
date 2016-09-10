@@ -17,6 +17,7 @@
 		DA29BB171D812B430054E0BB /* GratuitypUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29BB161D812B430054E0BB /* GratuitypUITests.swift */; };
 		DA29BB431D812CC70054E0BB /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = DA29BB421D812CC70054E0BB /* Icons */; };
 		DA29BB471D812CF90054E0BB /* Images in Resources */ = {isa = PBXBuildFile; fileRef = DA29BB461D812CF90054E0BB /* Images */; };
+		DAA67DD11D841993000F1160 /* Tips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAA67DD01D841993000F1160 /* Tips.jpg */; };
 		DAD1C41C1D82BBDB008D4055 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C41B1D82BBDB008D4055 /* connect.png */; };
 		DAD1C41E1D82BC54008D4055 /* network.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C41D1D82BC54008D4055 /* network.png */; };
 		DAD1C4221D82BCC4008D4055 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD1C4211D82BCC4008D4055 /* profile.png */; };
@@ -62,6 +63,7 @@
 		DA29BB181D812B430054E0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA29BB421D812CC70054E0BB /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
 		DA29BB461D812CF90054E0BB /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		DAA67DD01D841993000F1160 /* Tips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Tips.jpg; path = Gratuityp/Images/Tips.jpg; sourceTree = "<group>"; };
 		DAD1C41B1D82BBDB008D4055 /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.png; sourceTree = "<group>"; };
 		DAD1C41D1D82BC54008D4055 /* network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = network.png; sourceTree = "<group>"; };
 		DAD1C4211D82BCC4008D4055 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		DA29BAE81D812B430054E0BB = {
 			isa = PBXGroup;
 			children = (
+				DAA67DD01D841993000F1160 /* Tips.jpg */,
 				DA29BAF31D812B430054E0BB /* Gratuityp */,
 				DA29BB0A1D812B430054E0BB /* GratuitypTests */,
 				DA29BB151D812B430054E0BB /* GratuitypUITests */,
@@ -237,6 +240,7 @@
 				TargetAttributes = {
 					DA29BAF01D812B430054E0BB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6CGSY8527L;
 					};
 					DA29BB061D812B430054E0BB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -284,6 +288,7 @@
 				DA29BAFC1D812B430054E0BB /* Main.storyboard in Resources */,
 				DAD1C4261D82BD76008D4055 /* news.png in Resources */,
 				DAD1C41C1D82BBDB008D4055 /* connect.png in Resources */,
+				DAA67DD11D841993000F1160 /* Tips.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,10 +462,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Gratuityp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gratuityp.com.Gratuityp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -468,10 +476,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Gratuityp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gratuityp.com.Gratuityp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
