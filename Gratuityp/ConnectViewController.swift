@@ -54,6 +54,8 @@ class ConnectViewController: UIViewController, UITextFieldDelegate {
      */
     func submitDetails() {
         
+        self.view.endEditing(true)
+        
         let url:NSURL = NSURL(string: "http://www.gratuityp.com/php/register.php")!
         let session = NSURLSession.sharedSession()
         
