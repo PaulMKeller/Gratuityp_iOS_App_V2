@@ -16,7 +16,7 @@ class ConnectViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var country: UITextField!
     @IBOutlet weak var confirm: UILabel!
     
-    
+    var activityView = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
     
     @IBAction func submit(sender: AnyObject) {
         submitDetails()
@@ -37,6 +37,9 @@ class ConnectViewController: UIViewController, UITextFieldDelegate {
         fname.delegate = self
         lname.delegate = self
         country.delegate = self
+        
+        activityView.center = self.view.center
+        self.view.addSubview(activityView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +58,8 @@ class ConnectViewController: UIViewController, UITextFieldDelegate {
     func submitDetails() {
         
         self.view.endEditing(true)
+        self.activityView.startAnimating()
+
         
         let url:NSURL = NSURL(string: "http://www.gratuityp.com/php/register.php")!
         let session = NSURLSession.sharedSession()
@@ -67,6 +72,7 @@ class ConnectViewController: UIViewController, UITextFieldDelegate {
         paramString += "&firstname=" + fname.text!
         paramString += "&lastname=" + lname.text!
         paramString += "&country=" + country.text!
+        paramString += "&websiteSubmission=FALSE"
         request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
         
         let task = session.dataTaskWithRequest(request) {
@@ -79,12 +85,17 @@ class ConnectViewController: UIViewController, UITextFieldDelegate {
             }
             
             let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print(dataString)
+            //print(dataString)
+            if dataString!.lowercaseString.rangeOfString("error") != nil {
+                self.confirm.text = "ERROR: Check entries and try again."
+            } else {
+                self.confirm.text = "Thank you for connecting!"
+            }
+            self.activityView.stopAnimating()
         }
         
         task.resume()
         
-        self.confirm.text = "Thank you for registering!"
     }
 
 
