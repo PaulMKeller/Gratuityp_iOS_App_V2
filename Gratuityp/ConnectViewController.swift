@@ -87,11 +87,12 @@ class ConnectViewController: UIViewController, UITextFieldDelegate {
             let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
             //print(dataString)
             if dataString!.lowercaseString.rangeOfString("error") != nil {
+                self.activityView.stopAnimating()
                 self.confirm.text = "ERROR: Check entries and try again."
             } else {
+                self.activityView.stopAnimating()
                 self.confirm.text = "Thank you for connecting!"
             }
-            self.activityView.stopAnimating()
         }
         
         task.resume()
